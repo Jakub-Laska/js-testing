@@ -389,3 +389,21 @@ text.split("")
 // W codziennym web developmencie najczęściej spotkasz się z metodami do manipulacji fragmentami tekstu (`indexOf()`, `includes()`, `replace()`, `split()`, `slice()`, `trim()`), jak również z metodami do zmiany wielkości liter (`toLowerCase()`, `toUpperCase()`).
 
 
+// String HTML Wrapper Methods
+// HTML wrapper methods return a string wrapped inside an HTML tag.
+
+// These are not standard methods, and may not work as expected.
+anchor()	Displays a string as an anchor
+big()	Displays a string using a big font
+blink()	Displays a blinking string
+bold()	Displays a string in bold
+fixed()	Displays a string using a fixed-pitch font
+fontcolor()	Displays a string using a specified color
+fontsize()	Displays a string using a specified size
+italics()	Displays a string in italic
+link()	Displays a string as a hyperlink
+small()	Displays a string using a small font
+strike()	Displays a string with a strikethrough
+sub()	Displays a string as subscript text
+sup()	Displays a string as superscript text
+
