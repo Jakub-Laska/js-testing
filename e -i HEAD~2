@@ -1,0 +1,48 @@
+[33mcommit 36a4b443b3615013ef659f6c67292c29068f2e1a[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: Klaska <laska.rayl@gmail.com>
+Date:   Thu Sep 5 23:46:52 2024 +0200
+
+    wrapper methods
+
+[33mcommit 33886bb4bb062a93ede37e10b3410efd886faecb[m
+Author: Klaska <laska.rayl@gmail.com>
+Date:   Thu Sep 5 23:37:19 2024 +0200
+
+    methods in Polish
+
+[33mcommit 5ff93dc1613f0a8f1a3a3fd2ad6ba6fb07deac46[m
+Author: Klaska <laska.rayl@gmail.com>
+Date:   Thu Sep 5 22:41:31 2024 +0200
+
+    string methods
+
+[33mcommit fad5e6fc8fda029d8d1f588d77cab6bce678ae33[m
+Author: Klaska <laska.rayl@gmail.com>
+Date:   Thu Sep 5 22:17:15 2024 +0200
+
+    Handling text
+
+[33mcommit 1dedd7dbe88d0c96820e8cf271b11dacd9549936[m
+Merge: 552796b d28dfef
+Author: Klaska <laska.rayl@gmail.com>
+Date:   Thu Sep 5 21:59:10 2024 +0200
+
+    Merge branch 'main' of https://github.com/Jakub-Laska/js-testing
+
+[33mcommit 552796b19cb6827b8063371a0e2d826978688ca6[m
+Author: Klaska <laska.rayl@gmail.com>
+Date:   Thu Sep 5 21:58:51 2024 +0200
+
+    declaring strings
+
+[33mcommit d28dfef8d34b0a9b4c2fb55fa1d724edc8fc048f[m
+Author: Laska <laska.rayl@gmail.com>
+Date:   Tue Sep 3 21:28:33 2024 +0200
+
+    Create README.md
+
+[33mcommit b96203a9431744e547df83a3f4a59c4b7aae4798[m
+Author: Klaska <laska.rayl@gmail.com>
+Date:   Tue Sep 3 21:28:02 2024 +0200
+
+    first commit
