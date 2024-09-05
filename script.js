@@ -556,3 +556,67 @@ if (time < 10) {
 } else {
   greeting = "Good evening";
 }
+
+
+// Logical operators
+// There are four logical operators in JavaScript: || (OR), && (AND), ! (NOT), ?? (Nullish Coalescing). Here we cover the first three, the ?? operator is in the next article.
+
+// Although they are called “logical”, they can be applied to values of any type, not only boolean. Their result can also be of any type.
+
+// || (OR)
+// The “OR” operator is represented with two vertical line symbols:
+
+result = a || b;
+
+// Most of the time, OR || is used in an if statement to test if any of the given conditions is true.
+// For example:
+
+let hour = 9;
+
+if (hour < 10 || hour > 18) {
+  alert( 'The office is closed.' );
+}
+
+
+// && (AND)
+// The AND operator is represented with two ampersands &&:
+
+result = a && b;
+
+let hour = 12;
+let minute = 30;
+
+if (hour == 12 && minute == 30) {
+  alert( 'The time is 12:30' );
+}
+
+
+// ! (NOT)
+// The boolean NOT operator is represented with an exclamation sign !.
+
+result = !value;
+
+let age = 55;
+if (age >= 14 && age <=90) {
+  alert('yes')} else {
+    alert('no')
+  };
+
+
+let userName = prompt('Who are you');
+if (userName === 'Admin') {
+  let pass = prompt('Password?', '');
+
+  if (pass === 'Admin123') {
+    alert('Welcome!');
+  } else if (pass === '' || pass === null) {
+    alert('Canceled');
+  } else {
+    alert('Wrong password');
+  } 
+} else if (userName === '' || userName === null) {
+  alert(Canceled);
+} else {
+  alert('I do not know you');
+}
+
