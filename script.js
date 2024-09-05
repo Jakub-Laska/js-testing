@@ -520,10 +520,39 @@ sup()	Displays a string as superscript text
 // The values null and undefined equal == each other and do not equal any other value.
 // Be careful when using comparisons like > or < with variables that can occasionally be null/undefined. Checking for null/undefined separately is a good idea.
 
-5 > 4 → true
-"apple" > "pineapple" → false
-"2" > "12" → true
-undefined == null → true
-undefined === null → false
-null == "\n0\n" → false
-null === +"\n0\n" → false
+// 5 > 4 → true
+// "apple" > "pineapple" → false
+// "2" > "12" → true
+// undefined == null → true
+// undefined === null → false
+// null == "\n0\n" → false
+// null === +"\n0\n" → false
+
+
+// JavaScript if, else, and else if
+
+// Use if to specify a block of code to be executed, if a specified condition is true
+// Use else to specify a block of code to be executed, if the same condition is false
+// Use else if to specify a new condition to test, if the first condition is false
+// Use switch to specify many alternative blocks of code to be executed
+
+// Note that if is in lowercase letters. Uppercase letters (If or IF) will generate a JavaScript error.
+
+if (condition1) {
+  //  block of code to be executed if condition1 is true
+} else if (condition2) {
+  //  block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  //  block of code to be executed if the condition1 is false and condition2 is false
+}
+
+// Example
+// If time is less than 10:00, create a "Good morning" greeting, if not, but time is less than 20:00, create a "Good day" greeting, otherwise a "Good evening":
+
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
