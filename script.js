@@ -455,3 +455,56 @@ sup()	Displays a string as superscript text
 
 
 
+// W języku JavaScript dostępnych jest wiele metod operujących na stringach (łańcuchach znaków). Każda z tych metod służy do manipulacji tekstem na różne sposoby. Oto wyjaśnienia w języku polskim oraz częstotliwość, z jaką metody te są używane w web developmencie:
+
+// Metody często używane w web developmencie:
+
+1. **at()**: Zwraca znak na określonej pozycji w stringu. Jest mniej popularna niż `charAt()`.
+2. **charAt()**: Zwraca znak z podanej pozycji. Używana w sytuacjach, gdy trzeba wyciągnąć konkretny znak z łańcucha.
+3. **charCodeAt()**: Zwraca wartość Unicode znaku na podanej pozycji. Przydatne przy pracy z kodami znaków.
+4. **concat()**: Łączy dwa lub więcej stringów w jeden. Używana czasami, ale częściej stosuje się operator `+`.
+5. **endsWith()**: Sprawdza, czy string kończy się podanym fragmentem. Używana do walidacji tekstu.
+6. **includes()**: Sprawdza, czy string zawiera podany fragment. Bardzo popularna, np. do walidacji czy szukania podciągów.
+7. **indexOf()**: Zwraca pozycję pierwszego wystąpienia podanego fragmentu w stringu. Bardzo popularna, np. do wyszukiwania słów.
+8. **lastIndexOf()**: Zwraca pozycję ostatniego wystąpienia podanego fragmentu w stringu. Używana do wyszukiwania od końca.
+9. **length**: Zwraca długość stringa. Niezwykle popularna, używana niemal w każdej manipulacji tekstem.
+10. **match()**: Wyszukuje dopasowania w stringu za pomocą wyrażeń regularnych. Bardzo używana do walidacji danych.
+11. **replace()**: Zastępuje pierwszy znaleziony fragment stringa innym. Bardzo częsta w manipulacji tekstem.
+12. **replaceAll()**: Zastępuje wszystkie wystąpienia danego fragmentu. Często używana do globalnych zamian.
+13. **slice()**: Wyciąga fragment stringa. Bardzo popularna przy manipulacji tekstem.
+14. **split()**: Dzieli string na tablicę, rozdzielając go za pomocą określonego separatora. Często stosowana do rozbijania tekstu na części.
+15. **startsWith()**: Sprawdza, czy string zaczyna się od podanego fragmentu. Używana do walidacji danych wejściowych.
+16. **substring()**: Wyciąga fragment stringa między dwoma indeksami. Często używana do pracy z częściami tekstu.
+17. **toLowerCase()** i **toUpperCase()**: Zmienia string na małe/wielkie litery. Bardzo popularne do normalizacji tekstu przed jego porównaniem.
+18. **trim()**: Usuwa białe znaki z początku i końca stringa. Często używana w walidacji formularzy.
+
+//  Rzadziej używane metody:
+
+1. **charCodeAt()** i **codePointAt()**: Używane, gdy potrzebna jest praca z Unicode (np. w międzynarodowych aplikacjach).
+2. **fromCharCode()**: Rzadziej używana, przydatna przy konwertowaniu kodów Unicode na znaki.
+3. **localeCompare()**: Używana do porównywania stringów w zależności od lokalizacji, głównie w aplikacjach międzynarodowych.
+4. **padEnd()** i **padStart()**: Dodaje znaki na początku lub końcu stringa. Czasem używana przy formatowaniu danych.
+5. **repeat()**: Zwraca nowy string powtórzony określoną ilość razy. Używana np. przy generowaniu powtarzalnych wzorców.
+6. **toLocaleLowerCase()** i **toLocaleUpperCase()**: Rzadziej używane zamienniki `toLowerCase()` i `toUpperCase()`, biorące pod uwagę lokalizację użytkownika.
+
+// W codziennym web developmencie najczęściej spotkasz się z metodami do manipulacji fragmentami tekstu (`indexOf()`, `includes()`, `replace()`, `split()`, `slice()`, `trim()`), jak również z metodami do zmiany wielkości liter (`toLowerCase()`, `toUpperCase()`).
+
+
+// String HTML Wrapper Methods
+// HTML wrapper methods return a string wrapped inside an HTML tag.
+
+// These are not standard methods, and may not work as expected.
+anchor()	Displays a string as an anchor
+big()	Displays a string using a big font
+blink()	Displays a blinking string
+bold()	Displays a string in bold
+fixed()	Displays a string using a fixed-pitch font
+fontcolor()	Displays a string using a specified color
+fontsize()	Displays a string using a specified size
+italics()	Displays a string in italic
+link()	Displays a string as a hyperlink
+small()	Displays a string using a small font
+strike()	Displays a string with a strikethrough
+sub()	Displays a string as subscript text
+sup()	Displays a string as superscript text
+
