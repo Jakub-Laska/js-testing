@@ -508,3 +508,22 @@ strike()	Displays a string with a strikethrough
 sub()	Displays a string as subscript text
 sup()	Displays a string as superscript text
 
+
+// Why did we go over these examples? Should we remember these peculiarities all the time? Well, not really. Actually, these tricky things will gradually become familiar over time, but there’s a solid way to avoid problems with them:
+
+// Treat any comparison with undefined/null except the strict equality === with exceptional care.
+// Don’t use comparisons >= > < <= with a variable which may be null/undefined, unless you’re really sure of what you’re doing. If a variable can have these values, check for them separately.
+
+// Comparison operators return a boolean value.
+// Strings are compared letter-by-letter in the “dictionary” order.
+// When values of different types are compared, they get converted to numbers (with the exclusion of a strict equality check).
+// The values null and undefined equal == each other and do not equal any other value.
+// Be careful when using comparisons like > or < with variables that can occasionally be null/undefined. Checking for null/undefined separately is a good idea.
+
+5 > 4 → true
+"apple" > "pineapple" → false
+"2" > "12" → true
+undefined == null → true
+undefined === null → false
+null == "\n0\n" → false
+null === +"\n0\n" → false
