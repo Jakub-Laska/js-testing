@@ -98,7 +98,7 @@
 // let finalNumber = finalResult;
 // console.log(finalNumber);
 
-// // Statement 1: The elephant weighs less than the mouse
+// Statement 1: The elephant weighs less than the mouse
 // const eleWeight = 1000;
 // const mouseWeight = 2;
 
@@ -106,7 +106,7 @@
 // console.log(weightComparison);
 
 
-// // Statement 2: The Ostrich is taller than the duck
+// Statement 2: The Ostrich is taller than the duck
 // const ostrichHeight = 2;
 // const duckHeight = 0.3;
 
@@ -114,7 +114,7 @@
 // console.log(heightComparison);
 
 
-// // Statement 3: The two passwords match
+// Statement 3: The two passwords match
 // const pwd1 = 'stromboli';
 // const pwd2 = 'stROmBoLi';
 
@@ -129,3 +129,31 @@ function updateName() {
   const name = prompt("Enter a new name");
   button.textContent = `Player 1: ${name}`;
 }
+
+
+const string = "The revolution will not be televised.";
+console.log(string);
+
+const badString = string;
+console.log(badString);
+
+
+// In JavaScript, you can choose single quotes ('),
+// double quotes ("), or backticks (`) to wrap your strings in.
+// All of the following will work:
+const single = 'Single quotes';
+const double = "Double quotes";
+const backtick = `Backtick`;
+
+console.log(single);
+console.log(double);
+console.log(backtick);  
+// Strings declared using single quotes and strings declared using double quotes are the same
+
+
+// Strings declared using backticks are a special kind of string called a template literal
+// Inside a template literal, you can wrap JavaScript variables or expressions inside ${ },
+// and the result will be included in the string:
+const name = "Chris";
+const greeting = `Hello, ${name}`;
+console.log(greeting); // "Hello, Chris"
