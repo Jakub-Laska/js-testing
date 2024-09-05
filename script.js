@@ -407,3 +407,123 @@ strike()	Displays a string with a strikethrough
 sub()	Displays a string as subscript text
 sup()	Displays a string as superscript text
 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+
+// Comparisons
+// We know many comparison operators from maths.
+
+// In JavaScript they are written like this:
+
+// Greater/less than: a > b, a < b.
+// Greater/less than or equals: a >= b, a <= b.
+// Equals: a == b, please note the double equality sign == means the equality test, while a single one a = b means an assignment.
+// Not equals: In maths the notation is ≠, but in JavaScript it’s written as a != b.
+
+// Boolean is the result
+// All comparison operators return a boolean value:
+
+// true – means “yes”, “correct” or “the truth”.
+// false – means “no”, “wrong” or “not the truth”.
+
+
+// there’s a solid way to avoid problems with them:
+
+// Treat any comparison with undefined/null except the strict equality === with exceptional care.
+// Don’t use comparisons >= > < <= with a variable which may be null/undefined, unless you’re really sure of what you’re doing. If a variable can have these values, check for them separately.
+
+// Summary
+// Comparison operators return a boolean value.
+// Strings are compared letter-by-letter in the “dictionary” order.
+// When values of different types are compared, they get converted to numbers (with the exclusion of a strict equality check).
+// The values null and undefined equal == each other and do not equal any other value.
+// Be careful when using comparisons like > or < with variables that can occasionally be null/undefined. Checking for null/undefined separately is a good idea.
+
+
+// 5 > 4 true
+// "apple" > "pineapple" false
+// "2" > "12" true
+// undefined == null true
+// undefined === null false
+// null == "\n0\n" false
+// null === +"\n0\n"false
+
+
+
+
+
+
+
+
+// W języku JavaScript dostępnych jest wiele metod operujących na stringach (łańcuchach znaków). Każda z tych metod służy do manipulacji tekstem na różne sposoby. Oto wyjaśnienia w języku polskim oraz częstotliwość, z jaką metody te są używane w web developmencie:
+
+// Metody często używane w web developmencie:
+
+1. **at()**: Zwraca znak na określonej pozycji w stringu. Jest mniej popularna niż `charAt()`.
+2. **charAt()**: Zwraca znak z podanej pozycji. Używana w sytuacjach, gdy trzeba wyciągnąć konkretny znak z łańcucha.
+3. **charCodeAt()**: Zwraca wartość Unicode znaku na podanej pozycji. Przydatne przy pracy z kodami znaków.
+4. **concat()**: Łączy dwa lub więcej stringów w jeden. Używana czasami, ale częściej stosuje się operator `+`.
+5. **endsWith()**: Sprawdza, czy string kończy się podanym fragmentem. Używana do walidacji tekstu.
+6. **includes()**: Sprawdza, czy string zawiera podany fragment. Bardzo popularna, np. do walidacji czy szukania podciągów.
+7. **indexOf()**: Zwraca pozycję pierwszego wystąpienia podanego fragmentu w stringu. Bardzo popularna, np. do wyszukiwania słów.
+8. **lastIndexOf()**: Zwraca pozycję ostatniego wystąpienia podanego fragmentu w stringu. Używana do wyszukiwania od końca.
+9. **length**: Zwraca długość stringa. Niezwykle popularna, używana niemal w każdej manipulacji tekstem.
+10. **match()**: Wyszukuje dopasowania w stringu za pomocą wyrażeń regularnych. Bardzo używana do walidacji danych.
+11. **replace()**: Zastępuje pierwszy znaleziony fragment stringa innym. Bardzo częsta w manipulacji tekstem.
+12. **replaceAll()**: Zastępuje wszystkie wystąpienia danego fragmentu. Często używana do globalnych zamian.
+13. **slice()**: Wyciąga fragment stringa. Bardzo popularna przy manipulacji tekstem.
+14. **split()**: Dzieli string na tablicę, rozdzielając go za pomocą określonego separatora. Często stosowana do rozbijania tekstu na części.
+15. **startsWith()**: Sprawdza, czy string zaczyna się od podanego fragmentu. Używana do walidacji danych wejściowych.
+16. **substring()**: Wyciąga fragment stringa między dwoma indeksami. Często używana do pracy z częściami tekstu.
+17. **toLowerCase()** i **toUpperCase()**: Zmienia string na małe/wielkie litery. Bardzo popularne do normalizacji tekstu przed jego porównaniem.
+18. **trim()**: Usuwa białe znaki z początku i końca stringa. Często używana w walidacji formularzy.
+
+//  Rzadziej używane metody:
+
+1. **charCodeAt()** i **codePointAt()**: Używane, gdy potrzebna jest praca z Unicode (np. w międzynarodowych aplikacjach).
+2. **fromCharCode()**: Rzadziej używana, przydatna przy konwertowaniu kodów Unicode na znaki.
+3. **localeCompare()**: Używana do porównywania stringów w zależności od lokalizacji, głównie w aplikacjach międzynarodowych.
+4. **padEnd()** i **padStart()**: Dodaje znaki na początku lub końcu stringa. Czasem używana przy formatowaniu danych.
+5. **repeat()**: Zwraca nowy string powtórzony określoną ilość razy. Używana np. przy generowaniu powtarzalnych wzorców.
+6. **toLocaleLowerCase()** i **toLocaleUpperCase()**: Rzadziej używane zamienniki `toLowerCase()` i `toUpperCase()`, biorące pod uwagę lokalizację użytkownika.
+
+// W codziennym web developmencie najczęściej spotkasz się z metodami do manipulacji fragmentami tekstu (`indexOf()`, `includes()`, `replace()`, `split()`, `slice()`, `trim()`), jak również z metodami do zmiany wielkości liter (`toLowerCase()`, `toUpperCase()`).
+
+
+// String HTML Wrapper Methods
+// HTML wrapper methods return a string wrapped inside an HTML tag.
+
+// These are not standard methods, and may not work as expected.
+anchor()	Displays a string as an anchor
+big()	Displays a string using a big font
+blink()	Displays a blinking string
+bold()	Displays a string in bold
+fixed()	Displays a string using a fixed-pitch font
+fontcolor()	Displays a string using a specified color
+fontsize()	Displays a string using a specified size
+italics()	Displays a string in italic
+link()	Displays a string as a hyperlink
+small()	Displays a string using a small font
+strike()	Displays a string with a strikethrough
+sub()	Displays a string as subscript text
+sup()	Displays a string as superscript text
+
+
+// Why did we go over these examples? Should we remember these peculiarities all the time? Well, not really. Actually, these tricky things will gradually become familiar over time, but there’s a solid way to avoid problems with them:
+
+// Treat any comparison with undefined/null except the strict equality === with exceptional care.
+// Don’t use comparisons >= > < <= with a variable which may be null/undefined, unless you’re really sure of what you’re doing. If a variable can have these values, check for them separately.
+
+// Comparison operators return a boolean value.
+// Strings are compared letter-by-letter in the “dictionary” order.
+// When values of different types are compared, they get converted to numbers (with the exclusion of a strict equality check).
+// The values null and undefined equal == each other and do not equal any other value.
+// Be careful when using comparisons like > or < with variables that can occasionally be null/undefined. Checking for null/undefined separately is a good idea.
+
+5 > 4 → true
+"apple" > "pineapple" → false
+"2" > "12" → true
+undefined == null → true
+undefined === null → false
+null == "\n0\n" → false
+null === +"\n0\n" → false
