@@ -620,3 +620,29 @@
 //   alert('I do not know you');
 // }
 
+const select = document.querySelector('select');
+const para = document.querySelector('p');
+
+select.addEventListener('change', setWeather);
+
+
+function setWeather() {
+  const choice = select.value;
+
+  if (choice === 'sunny') {
+    para.textContent = 
+    'It is nice and sunny outside today, no chance for rain!';
+  }
+  else if (choice === 'rainy') {
+    para.textContent =
+    'It is raining dogs today, do not forget your umbrella!';
+  }
+  else if (choice === 'snowy') {
+    para.textContent =
+    'Snow is falling go make a snowman!';
+  }
+  else {
+    para.textContent =
+    '';
+  }
+}
