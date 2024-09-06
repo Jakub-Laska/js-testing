@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 10rem;
+    align-items: center;
+    background-color: #faebd71e;
+}
+button{
+    width: 100px;
+}
+#weather{
+    width: 150px;
+    background-color: #141483e0;
+    color: whitesmoke;
+    border-radius: .4rem;
+    padding: .5rem;
+    text-align: center;
+}
+label {
+    margin-bottom: -1rem;
+}
