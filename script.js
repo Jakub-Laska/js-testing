@@ -620,29 +620,56 @@
 //   alert('I do not know you');
 // }
 
-const select = document.querySelector('select');
-const para = document.querySelector('p');
+// const select = document.querySelector('select');
+// const para = document.querySelector('p');
 
-select.addEventListener('change', setWeather);
+// select.addEventListener('change', setWeather);
 
 
-function setWeather() {
-  const choice = select.value;
+// function setWeather() {
+//   const choice = select.value;
 
-  if (choice === 'sunny') {
-    para.textContent = 
-    'It is nice and sunny outside today, no chance for rain!';
-  }
-  else if (choice === 'rainy') {
-    para.textContent =
-    'It is raining dogs today, do not forget your umbrella!';
-  }
-  else if (choice === 'snowy') {
-    para.textContent =
-    'Snow is falling go make a snowman!';
-  }
-  else {
-    para.textContent =
-    '';
-  }
+//   if (choice === 'sunny') {
+//     para.textContent = 
+//     'It is nice and sunny outside today, no chance for rain!';
+//   }
+//   else if (choice === 'rainy') {
+//     para.textContent =
+//     'It is raining dogs today, do not forget your umbrella!';
+//   }
+//   else if (choice === 'snowy') {
+//     para.textContent =
+//     'Snow is falling go make a snowman!';
+//   }
+//   else {
+//     para.textContent =
+//     '';
+//   }
+// }
+
+let light = document.querySelector('button');
+let background = document.querySelector('body');
+
+light.addEventListener('click', changeLight);
+
+function changeLight() {
+    let mode = light.textContent;
+
+    if (mode === 'night') {
+        light.textContent =
+        'day';
+        background.style.backgroundColor = '#e6cdcd';
+        background.style.color = '#000000b4';
+        light.style.backgroundColor = '#df6e6e88';
+    }
+    else if (mode === 'day') {
+        light.textContent =
+        'night';
+        background.style.backgroundColor = '#000000b4';
+        background.style.color = '#e6cdcd';
+        light.style.backgroundColor = '#7e0d0d88';
+    }
+    else {
+        console.log('what');
+    }
 }
