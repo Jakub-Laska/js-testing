@@ -23,4 +23,3 @@ btn.addEventListener('click', () => {
 
     input.focus();
 });
-// streak
