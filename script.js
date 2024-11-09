@@ -2,7 +2,7 @@ const input = document.querySelector('input');
 const btn = document.querySelector('button');
 const list = document.querySelector('ul');
 input.focus();
-
+// streak too much work
 btn.addEventListener('click', () => {
     let inputValue = input.value;
     input.value = '';
